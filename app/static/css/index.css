@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Cookie&family=Dancing+Script:wght@400;700&family=Inspiration&family=Pacifico&family=Poppins:wght@100;300&family=Satisfy&family=Shadows+Into+Light&display=swap');
+
+
 #submit{
   width: 100%;
   background-color: #45D2A6;
@@ -16,6 +19,8 @@ body{
 
 *{
   color: white;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 
@@ -49,7 +54,7 @@ body{
 }
 
 .navbar{
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.4);
 }
 
 .navbar-brand, .navbar-nav a{
@@ -61,6 +66,9 @@ body{
   color: #212121;
 }
 
+.icon-bar{
+  background-color: #fff;
+}
 
 .schedule{
   backdrop-filter: blur(5px);
@@ -73,4 +81,8 @@ body{
   justify-content: center;
   align-items: center; */
   min-height: 100vh;
+}
+
+.banner{
+  background-color: rgba(33, 33, 33, 0.8);
 }
