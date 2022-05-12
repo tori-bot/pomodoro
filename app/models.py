@@ -31,9 +31,9 @@ class Work(db.Model):
     __tablename__='work'
 
     id=db.Column(db.Integer,primary_key=True)
-    categoryw=db.Column(db.String)
+    # categoryw=db.Column(db.String)
     work_time=db.Column(db.Integer)
-    user_id=db.Column(db.Integer,ForeignKey='users.id')
+    user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
 
     def save_work(self):
         db.session.add(self)
@@ -55,7 +55,7 @@ class Break(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     categoryb=db.Column(db.String)
     break_time=db.Column(db.Integer)
-    user_id=db.Column(db.Integer,ForeignKey='users.id')
+    user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
 
     def save_break(self):
         db.session.add(self)
