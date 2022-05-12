@@ -68,4 +68,4 @@ Copyright (c) 2022 MIT License. [View License Here](LICENSE)
 * GitHub - [Alvin Kenyagah](https://github.com/alvinkenyagah)
 * Email address - [alvin47k@gmail.com](mailto:alvin47k@gmail.com)
 
-[Go Back to the top](#staysane)
+[Go Back to the top](#POMODORO)
