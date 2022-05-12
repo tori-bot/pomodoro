@@ -60,7 +60,7 @@ Copyright (c) 2022 MIT License. [View License Here](LICENSE)
 * GitHub - [Charles Okunzo](https://github.com/charles-okunzo)
 * Email address - [charles.okunzo@student.moringaschool.com](mailto:charles.okunzo@student.moringaschool.com)
 
-### Alvin Kenyagah- Contributor, Dev.
+### Martin Maina- Contributor, Dev.
 * GitHub - [Martin Maina](https://github.com/Martin023)
 * Email address - [mainamartin023@gmail.com](mailto:mainamartin023@gmail.com)
 
