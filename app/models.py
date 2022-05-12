@@ -1,15 +1,23 @@
 import datetime
 from flask_login import UserMixin
 from sqlalchemy import ForeignKey
-from . import db
+from . import db, login_manager
 from werkzeug.security import check_password_hash,generate_password_hash
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
+    
 class User(UserMixin, db.Model):
     __tablename__='users'
 
     id=db.Column(db.Integer,primary_key=True)
     username=db.Column(db.String(255))
     email=db.Column(db.String(255))
-    password=db.Column(db.String(255))
+    pass_code=db.Column(db.String(255))
+    works = db.relationship('Work', backref='user', lazy='dynamic')
+    breaks = db.relationship('Break', backref='user', lazy='dynamic')
 
     @property
     def password(self):
@@ -28,10 +36,9 @@ class User(UserMixin, db.Model):
 
 
 class Work(db.Model):
-    __tablename__='work'
+    __tablename__='works'
 
     id=db.Column(db.Integer,primary_key=True)
-    # categoryw=db.Column(db.String)
     work_time=db.Column(db.Integer)
     user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
 
@@ -50,7 +57,7 @@ class Work(db.Model):
         return f' {self.categoryw} Work '
 
 class Break(db.Model):
-    __tablename__='break'
+    __tablename__='breaks'
 
     id=db.Column(db.Integer,primary_key=True)
     categoryb=db.Column(db.String)
