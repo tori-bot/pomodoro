@@ -18,7 +18,7 @@
 
 ## Description
 
-This is a web application meant to connect individuals struggling with mental health problems to acquire needed assistance by connecting them to qualified professionals. [Powerpoint slides.](https://docs.google.com/presentation/d/1RqccBQOWLDmqyodjcmppOMw_SWrikClm9EavVq1KudA/edit#slide=id.gd5b09a965_5_0)
+Pomodoro is a flask web application tailored for companies to reminds coworkers to take a break in order to maintain the healthiest possible working conditions. [Powerpoint slides.](https://docs.google.com/presentation/d/1RqccBQOWLDmqyodjcmppOMw_SWrikClm9EavVq1KudA/edit#slide=id.gd5b09a965_5_0)
 
 ### Requirements
 
