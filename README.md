@@ -1,7 +1,9 @@
 <div id="header" align="center">
   <img src="https://colorlib.com/etc/regform/colorlib-regform-7/images/signup-image.jpg"/>
 </div>
-# POMODORO
+
+# Pomodoro
+
 #### By Victoria Makena, Charles Okunzo, Martin Maina, Alvin Kenyagah.
 ### An application for users to document their work sessions and incorporate breaks for a healthy work life.
 
