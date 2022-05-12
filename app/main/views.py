@@ -33,3 +33,8 @@ def work_form():
     return redirect(url_for('main.index'))
 
   return render_template('work_form.html', form=form)
+
+
+@main.route('/sessions')
+def table():
+  return render_template('session_res.html')

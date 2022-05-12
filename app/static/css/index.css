@@ -86,3 +86,21 @@ body{
 .banner{
   background-color: rgba(33, 33, 33, 0.8);
 }
+
+.table{
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(5px);
+}
+
+.table tr{
+  transition: all 0.5s ease-in;
+}
+
+
+.table tr:hover{
+  transform: scale(1.1);
+}
+
+.table-div{
+  border-left: 2px solid #45D2A6;
+}

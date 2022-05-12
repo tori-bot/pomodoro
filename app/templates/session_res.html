@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div class="video-bg">
+  <video muted autoplay loop>
+    <source src="../static/assets/Hourglass .mp4" type="video/mp4">
+  </video>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6 table-div">
+        <h2 style="text-align: center;">User's sessions</h2><hr>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Work duration</th>
+              <th scope="col">Break duration</th>
+              <th scope="col">Break activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>30 mins</td>
+              <td>4 mins</td>
+              <td>Tea</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>40 mins</td>
+              <td>5 mins</td>
+              <td>Walk</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+{% endblock %}
