@@ -3,11 +3,17 @@
 
 
 {% block content %}
+<div class="video-bg">
+  <video muted autoplay loop>
+    <source src="../static/assets/Hourglass .mp4" type="video/mp4">
+  </video>
+ </div>
+
   <div class="container">
-    <div class="row">
+    <div class="row schedule-row">
       <div class="col-md-3"></div>
-      <div class="col-md-6">
-        <h2 style="text-align:center ;">TIMER</h2><hr>
+      <div class="col-md-6 schedule">
+        <h2 style="text-align:center ; color: #45D2A6;">TIMER</h2><hr>
         {{wtf.quick_form(form)}}
       </div>
       <div class="col-md-3"></div>

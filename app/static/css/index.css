@@ -2,4 +2,75 @@
   width: 100%;
   background-color: #45D2A6;
   color: #fff;
+  outline: none;
+}
+.form-control{
+  background-color: rgba(33, 33, 33, 0.5);
+  color: #45D2A6;
+}
+
+
+body{
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+*{
+  color: white;
+}
+
+
+.video-bg{
+  position: fixed;
+  z-index: -2;
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+}
+
+
+@media (min-aspect-ratio:16/9){
+  .video-bg{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9){
+  .video-bg{
+    width: auto;
+    height: 100%;
+  }
+}
+
+.navbar{
+  background-color: rgba(0,0,0,0.5);
+}
+
+.navbar-brand, .navbar-nav a{
+  color: #45D2A6;
+  transition: all 1s ease-in-out;
+}
+
+.navbar-nav a:hover{
+  color: #212121;
+}
+
+
+.schedule{
+  backdrop-filter: blur(5px);
+}
+
+.schedule-row{
+  display: grid;
+  place-items: center;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  min-height: 100vh;
 }
