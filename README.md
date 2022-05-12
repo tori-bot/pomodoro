@@ -31,12 +31,12 @@ This is a web application meant to connect individuals struggling with mental he
 [Follow This Link]()
 
 ## Technology Used 
-*HTML
-*CSS
-*Bootstrap 
-*Python 
-*Heroku
-*PostgreSql
+* HTML
+* CSS
+* Bootstrap 
+* Python 
+* Heroku
+* PostgreSql
 
 [Go Back to the top](#POMODORO)
 
