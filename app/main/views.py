@@ -16,7 +16,7 @@ def index():
 
 
 @main.route('/Work Form', methods=['GET', 'POST'])
-@login_required
+# @login_required
 def work_form():
   form = WorkForm()
   if form.validate_on_submit():
