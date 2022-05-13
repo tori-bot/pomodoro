@@ -17,7 +17,7 @@ def index():
 
 
 @main.route('/work-form', methods=['GET','POST'])
-@login_required
+# @login_required
 def work_form():
   # user = User.query.filter(user_id = current_user._get_current_object.id)
   form = WorkForm()
