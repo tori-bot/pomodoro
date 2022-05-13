@@ -1,6 +1,5 @@
 import datetime
 from flask_login import UserMixin
-from sqlalchemy import ForeignKey
 from . import db, login_manager
 from werkzeug.security import check_password_hash,generate_password_hash
 
@@ -16,7 +15,7 @@ class User(UserMixin, db.Model):
     username=db.Column(db.String(255))
     email=db.Column(db.String(255))
     pass_code=db.Column(db.String(255))
-    works = db.relationship('Work', backref='user', lazy='dynamic')
+    # works = db.relationship('Work', backref='user', lazy='dynamic')
     breaks = db.relationship('Break', backref='user', lazy='dynamic')
 
     @property
@@ -25,43 +24,44 @@ class User(UserMixin, db.Model):
 
     @password.setter
     def password(self, password):
-        self.password = generate_password_hash(password)
+        self.pass_code = generate_password_hash(password)
 
 
     def verify_password(self,password):
-        return check_password_hash(self.password,password)
+        return check_password_hash(self.pass_code,password)
 
     def __repr__(self):
         return f'User {self.username} '
 
 
-class Work(db.Model):
-    __tablename__='works'
+# class Work(db.Model):
+#     __tablename__='works'
 
-    id=db.Column(db.Integer,primary_key=True)
-    work_time=db.Column(db.Integer)
-    user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
+#     id=db.Column(db.Integer,primary_key=True)
+    
+#     user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
 
-    def save_work(self):
-        db.session.add(self)
-        db.session.commit()
+#     def save_work(self):
+#         db.session.add(self)
+#         db.session.commit()
 
-    @classmethod
-    def get_work(cls,categoryw):
-        works=Work.query.filter_by(categoryw=categoryw).all()
-        return works
+#     @classmethod
+#     def get_work(cls,categoryw):
+#         works=Work.query.filter_by(categoryw=categoryw).all()
+#         return works
 
         
     
-    def __repr__(self):
-        return f' {self.categoryw} Work '
+#     def __repr__(self):
+#         return f' {self.categoryw} Work '
 
 class Break(db.Model):
     __tablename__='breaks'
 
     id=db.Column(db.Integer,primary_key=True)
-    categoryb=db.Column(db.String)
+    work_time=db.Column(db.Integer)
     break_time=db.Column(db.Integer)
+    categoryb=db.Column(db.String)
     user_id=db.Column(db.Integer, db.ForeignKey('users.id'))
 
     def save_break(self):

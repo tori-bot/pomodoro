@@ -24,18 +24,20 @@
             </tr>
           </thead>
           <tbody>
+            {% for brek in breaks %}
             <tr>
               <th scope="row">1</th>
-              <td>30 mins</td>
-              <td>4 mins</td>
-              <td>Tea</td>
+              <td>{{brek.work_time}}</td>
+              <td>{{brek.break_time}}</td>
+              <td>{{brek.categoryb}}</td>
             </tr>
-            <tr>
+            {% endfor %}
+            <!-- <tr>
               <th scope="row">2</th>
               <td>40 mins</td>
               <td>5 mins</td>
               <td>Walk</td>
-            </tr>
+            </tr> -->
             
           </tbody>
         </table>

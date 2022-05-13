@@ -1,0 +1,12 @@
+{% macro displayWork(works) %}
+{% for work in works %}
+<td>{{work.work_time}}</td>
+{% endfor %}
+{% endmacro %}
+
+{% macro displayBreak(breaks) %}
+{% for brek in breaks %}
+<td>{{brek.break_time}}</td>
+<td>{{brek.categoryb}}</td>
+{% endfor %}
+{% endmacro %}
